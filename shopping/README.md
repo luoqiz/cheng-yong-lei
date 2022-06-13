@@ -4,12 +4,14 @@
 
 ## 镜像启动脚本命令
 
-`docker run --name php-nginx-test -p 80:80 \
+```
+docker run --name php-nginx-test -p 80:80 \
     -v /opt/module/php-nginx/html:/app \
     -v /opt/etc/nginx/ssl/server.crt:/opt/docker/etc/nginx/ssl/server.crt \
     -v /opt/etc/nginx/ssl/server.key:/opt/docker/etc/nginx/ssl/server.key \
     -v /opt/etc/nginx/vhost.conf:/opt/docker/etc/nginx/vhost.conf \
-    -d luoqiz/php-nginx:centos-7-php56`
+    -d luoqiz/php-nginx:centos-7-php56
+```
 
 <br/>
 
