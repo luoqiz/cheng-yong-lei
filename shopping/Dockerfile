@@ -1,4 +1,5 @@
 FROM webdevops/php-nginx:centos-7-php56
+COPY ./src /app
 VOLUME /tmp
 ENV TZ=Asia/Shanghai
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
